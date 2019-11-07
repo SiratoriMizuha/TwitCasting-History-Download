@@ -32,12 +32,16 @@ file为你的onedrive保存路径
 
 当前台直接操作时用
 `python twitcast_spider.py kuroneko_datenn record/rika`
+
 终端不关闭后台运行时用
 `python twitcast_spider.py kuroneko_datenn record/rika > rika.log &`
 即可
+
 这里rika.log为日志的名字，也是取自己喜欢的名字就行
+
 如果关闭终端后台运行的话就可以用
 `nohup python twitcast_spider.py kuroneko_datenn record/rika > rika.log &`
+
 具体其他后台相关操作可以看[这里](https://blog.csdn.net/weixin_39561473/article/details/89765106)
 
 # 补充
