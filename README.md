@@ -38,8 +38,8 @@ user_id为要下载的主播的id
 
 file为你的onedrive保存路径
 
-比如上面录制的利香可以统一保存在record/rika之类的路径里，当然取自己喜欢的路径名字就行，如果路径不存在则会自动创建，所以不用担心
-
+比如上面录制的利香可以统一保存在record/rika之类的路径里，当然取自己喜欢的路径名字就行
+但路径不在服务器上事先创建好的话会报错，不过OneDrive上会自动创建
 当前台直接操作时用
 `python twitcast_spider.py kuroneko_datenn record/rika`
 
@@ -51,8 +51,9 @@ file为你的onedrive保存路径
 
 如果关闭终端后台运行的话就可以用
 
-`nohup python twitcast_spider.py kuroneko_datenn record/rika > rika.log &`
+`nohup python -u twitcast_spider.py kuroneko_datenn record/rika > rika.log &`
 
+这里如果不加-u参数的话日志会缓冲，导致不能及时显示内容
 具体其他后台相关操作可以看[这里](https://blog.csdn.net/weixin_39561473/article/details/89765106)
 
 # 补充
