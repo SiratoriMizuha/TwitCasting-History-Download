@@ -16,18 +16,27 @@ pip install requests
 pip install beautifulsoup4
 ```
 同时需要用到[OneDrive for Business on Bash](https://github.com/0oVicero0/OneDrive)
+
 操作说明参考https://www.moerats.com/archives/697/
+
 顺便因为考虑到脚本下载的视频量应该比较大，可能下到一半服务器容量就满了，所以下载好后是直接上传到OneDrive并删除服务器上的视频文件的
+
 所以使用本脚本前请先务必将上面的OneDrive依赖下好
 
 # 使用方法
 本脚本只有两个参数
+
 示例为
 `python twitcast_spider.py user_id file`
+
 user_id为要下载的主播的id
+
 例如利香的主页为https://twitcasting.tv/kuroneko_datenn
+
 她的user_id即为kuroneko_datenn
+
 file为你的onedrive保存路径
+
 比如上面录制的利香可以统一保存在record/rika之类的路径里，当然取自己喜欢的路径名字就行，如果路径不存在则会自动创建，所以不用担心
 
 当前台直接操作时用
@@ -40,6 +49,7 @@ file为你的onedrive保存路径
 这里rika.log为日志的名字，也是取自己喜欢的名字就行
 
 如果关闭终端后台运行的话就可以用
+
 `nohup python twitcast_spider.py kuroneko_datenn record/rika > rika.log &`
 
 具体其他后台相关操作可以看[这里](https://blog.csdn.net/weixin_39561473/article/details/89765106)
